@@ -135,7 +135,30 @@ arr.add("hello");
 
 json.add("0", arr);
 </pre>
+## Request Information
+### Header Data
+ you can access the Header information by using the header function given by the request parameter in the handler class
+<pre>
+class Home implements UrlFunctionCaller{
+    public ResponceData run(RequestData request) {
+        <b>System.out.println(request.header("Content-Length"));</b>
+        ResponceData rd = Responce.fileResponce("welcome.html");
+        return rd;
+    }
+}
+</pre>
 
+### Post Data
+ you can access the Post information by using the post function given by the request parameter in the handler class
+<pre>
+class Home implements UrlFunctionCaller{
+    public ResponceData run(RequestData request) {
+        <b>System.out.println(request.post("name"));</b>
+        ResponceData rd = Responce.fileResponce("welcome.html");
+        return rd;
+    }
+}
+</pre>
 ## Database connection
 * You can get the connection instance for the inbuilt sqllite database by Database.getConnection() method present in functionality.DatabaseConnection
 <pre>
@@ -145,3 +168,4 @@ import functionality.DatabaseConnection;
 <pre>
 Connection con = DatabaseConnection.getConnection();
 </pre>
+### Inspired by Django Python

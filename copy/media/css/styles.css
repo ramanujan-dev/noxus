@@ -1,0 +1,14 @@
+html,body{
+    background-color: #1e1e1e;
+    height: 100%;
+    color: white;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+}
+#mainHeading{
+    font-size: 200%;
+}

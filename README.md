@@ -18,7 +18,7 @@ To run this framework you will need
 * Restart automatically on changes
 
 ## Set up Noxus
-* Download the noxus.zip file from the github repository
+* Download the files from the github repository
 * Extract the file in any location
 * Add the extracted folder which contain noxus-create.exe to PATH
 

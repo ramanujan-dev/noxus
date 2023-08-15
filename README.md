@@ -20,7 +20,7 @@ To run this framework you will need
 ## Set up Noxus
 * Download the noxus.zip file from the github repository
 * Extract the file in any location
-* Add the extracted folder to PATH
+* Add the extracted folder which contain noxus-create.exe to PATH
 
 ## Create a project
 create the project by the following command in your terminal
